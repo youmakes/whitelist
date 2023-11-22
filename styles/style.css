@@ -1,1 +1,64 @@
 @import url(reset.css);
+
+
+/* Шапка сайта */
+body {
+	
+}
+header {
+	
+	width: inherit;
+	background-color: green;
+}
+.header {
+	box-sizing: border-box;
+	width: 360px;
+	background-color: gray;
+	padding: 24px 20px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo {
+
+}
+.header__logo-image {
+	width: 78.453px;
+	height: 15.432px;
+}
+.header__menu {
+	width: 75px;
+	height: 85px;
+}
+.header__menu-list {
+	height: inherit;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+
+}
+.header__menu-item {
+
+}
+.header__menu-link {
+
+}
+.header__menu-item_active>a {
+	text-decoration: none;
+}
+
+/* Стили для текста */
+
+.text_style-inter {
+	color: #F5F5F5;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19.2px;
+}
+.text-style-ebgaramond {
+
+}
