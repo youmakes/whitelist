@@ -1,27 +1,48 @@
 @import url(reset.css);
 
 
+:root {
+	--main-color-white: #F5F5F5;
+	--main-color-gray: #CCC;
+	--main-color-black: black;
+}
+
+/* Стили для текста */
+
+.text_style-inter {
+	color: #F5F5F5;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19.2px;
+}
+.text_style-ebgaramond {
+	color: #FFF;
+	font-family: EB Garamond;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%;
+}
+
 /* Шапка сайта */
-body {
-	
+section {
+	padding: 0px 20px;
+}
+.wrapper {
+	width: 360px;
+	margin: auto;
 }
 header {
 	
 	width: inherit;
-	background-color: green;
 }
 .header {
 	box-sizing: border-box;
-	width: 360px;
-	background-color: gray;
-	padding: 24px 20px;
-	margin: auto;
+	padding: 24px 0px;
 	display: flex;
 	justify-content: space-between;
-}
-
-.header__logo {
-
 }
 .header__logo-image {
 	width: 78.453px;
@@ -37,28 +58,68 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
-
-}
-.header__menu-item {
-
-}
-.header__menu-link {
-
 }
 .header__menu-item_active>a {
 	text-decoration: none;
 }
 
-/* Стили для текста */
-
-.text_style-inter {
-	color: #F5F5F5;
-	font-family: Inter;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 19.2px;
+/* Основной контент */
+section {
+	padding: 40px 20px;
 }
-.text-style-ebgaramond {
+.article__title-text:nth-child(2) {
+	text-align: center;
+}
+.article__title-text:nth-child(3) {
+	text-align: end;
+}
+.article__sub {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 35px;
+}
+.article__sub-text {
+	width: 203px;
+}
+.article__desc-text:nth-child(1) {
+	padding: 24px 0px;
+}
 
+section:nth-child(2) {
+	padding: 40px 20px;
+	background-color: #FEE42A;
+}
+section:nth-child(2)>.article>.article__title>.article__title-text:first-child {
+	text-align: end;
+}
+section:nth-child(2)>.article>.article__title>.article__title-text:last-child {
+	text-align: start;
+}
+.article__list {
+	padding-left: 20px;
+}
+
+
+
+
+/* Модификаторы */
+
+.text_size-72 {
+	font-size: 72px;
+}
+.text_size-28 {
+	font-size: 28px;
+}
+.text_size-20 {
+	font-size: 20px;
+}
+
+.text_color-gray {
+	color: var(--main-color-gray);
+}
+.text_color-black {
+	color: var(--main-color-black);
+}
+.text_weight-high {
+	font-weight: 500;
 }
