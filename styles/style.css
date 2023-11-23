@@ -122,6 +122,9 @@ section:nth-child(3) {
 	flex-direction: column;
 	gap: 8px;
 }
+.card:last-child {
+	margin-bottom: 20px;
+}
 .card__image {
 	width: 100px;
 	height: 100px;
@@ -129,7 +132,30 @@ section:nth-child(3) {
 .card_bg-yellow {
 	background-color: #FEE42A;
 }
+/* Подвал */
 
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	border-top: solid 1px #FEE42A ;
+}
+
+.footer__logo {
+	display: flex;
+	align-items: center;
+}
+
+.footer__menu-list {
+	display: flex;
+	flex-direction: row;
+}
+.footer__menu-item {
+list-style-type: none;
+}
+.footer__menu-item:first-child {
+	padding-right: 16px;
+}
 
 /* Модификаторы */
 
