@@ -1,0 +1,62 @@
+@import url(reset.css);
+@import url(fonts.css);
+body {
+    width: 360px;
+    background-color: #131313;
+    margin: 0 auto;
+}
+
+a {
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    margin: 20px 20px 5px 20px;
+}
+.header__logo {
+    margin-top: 4px;
+}
+.header__nav {
+    display: flex;
+    row-gap: 12px;
+    flex-direction: column;
+    color: #f5f5f5;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 24px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.header__nav-active{
+   text-decoration: none; 
+}
+
+.prewiev {
+    display: flex;
+    flex-direction: column;
+    background-image: url(cover.png);
+    background-position: 0px 22px;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    margin: 0px 0px 0px 20px;
+}
+.prewiev__text {
+    color: white;
+    font-family: 'EB Garamond', 'Arial', serif;
+    font-size: 72px;
+    text-align: center;
+    line-height: 1em;
+    margin-right: 20px;
+}
+.prewiev__text:first-child {
+    text-align: left; 
+}
+.prewiev__text:last-child {
+    text-align: right;
+    padding-bottom: 5px;
+}   
