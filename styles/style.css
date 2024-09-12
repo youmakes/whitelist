@@ -2,22 +2,24 @@
 @import url(fonts.css);
 body {
     width: 360px;
-    background-color: #131313;
     margin: 0 auto;
 }
 a {
     color: white;
 }
+.main {
+    background-color: #131313;
+}
 .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 7px;
-    margin: 20px 20px 5px 20px;
+    padding: 20px 20px 5px 20px;
+    background-color: #131313;
 }
 .header__logo {
     margin-top: 4px;
 }
-.header__nav {
+.header__menu-list {
     display: flex;
     row-gap: 12px;
     flex-direction: column;
@@ -28,13 +30,13 @@ a {
     line-height: 20px;
     letter-spacing: 0.5px;
 }
-.header__nav-active{
+.link_active {
    text-decoration: none; 
 }
 .prewiev {
     display: flex;
     flex-direction: column;
-    background-image: url(cover.png);
+    background-image: url(../images/cover.png);
     background-position: 0px 22px;
     background-repeat: no-repeat;
     background-clip: content-box;
@@ -72,7 +74,6 @@ a {
 .first-article__title > .first-article__text:last-child {
     white-space: nowrap;
 }
-
 .second-article {
     display: flex;
     flex-direction: column;
@@ -88,7 +89,7 @@ a {
 .special-text {
     font-family: 'EB Garamond', 'Arial', serif;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 115%;
 }
 .special-text:first-child {
@@ -99,6 +100,60 @@ a {
     flex-direction: column;
     gap: 16px;
     padding-left: 16px;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 21.5px;
+}
+.third-article {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: #F5F5F5;
+    padding: 40px 20px 60px 20px;
+}
+
+.third-article__text {
+    font-size: 20px;
+    line-height: 135%;
+}
+.card { 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #343434;
+    color: #f5f5f5;
+    border-radius: 30px;
+    padding: 20px;
+    line-height: 135%;
+}
+.card__image {
+    max-width: 37%;
+}
+.card__name {
+    font-size: 16px;
+    font-weight: 600;
+}
+.card__title {
+    font-family: 'EB Garamond', 'Arial', serif;
+    line-height: 135%;
+    font-size: 22px;
+}
+.card__text {
+    font-size: 16px;
+    line-height: 22px;
+}
+.special-bg {
+    background-color: #FEE42A;
+    color: #131313;
+}
+.footer {
+    display: flex;
+    border-top: 1px solid #FEE42A;
+    background-color: #131313;
+    color: #f5f5f5;
+    justify-content: space-between;
+    padding: 20px;
+}
+.footer__menu-list {
+    display: flex;
+    gap: 16px;
 }

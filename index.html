@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <div class="header__logo"><img src="VЁRSTKA.png"></div>
-        <nav class="header__nav">
-            <a href="#" class="header__nav-active">Главная</a>
-            <a href="#">О нас</a>
-            <a href="#">Контакты</a>
+        <div class="header__logo"><img src="images/VЁRSTKA.png"></div>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-list-item"><a href="#" class="link_active">Главная</a></li>
+                <li class="header__menu-list-item"><a href="#">О нас</a></li>
+                <li class="header__menu-list-item"><a href="#">Контакты</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <section class="prewiev">
-            <a class="prewiev__text">C</a>
-            <a class="prewiev__text">чистого</a>
-            <a class="prewiev__text">листа</a>
+            <p class="prewiev__text">C</p>
+            <p class="prewiev__text">чистого</p>
+            <p class="prewiev__text">листа</p>
         </section>
         <section class="first-article">
             <div class="first-article__title">
@@ -30,9 +32,9 @@
             <p class="first-article__text">Прокрастинировать перед тем, как начать что-то делать (особенно что-то новое) — нормальная реакция мозга. Разберёмся, почему это происходит.</p>
         </section>
         <section class="second-article">
-            <div class="second-article__title">
-                <p class="second-article__title special-text">Почему чистый лист</p>
-                <p class="second-article__title special-text">— такой cтрашный?</p>
+            <div>
+                <p class="article-title special-text">Почему чистый лист</p>
+                <p class="article-title special-text">— такой cтрашный?</p>
             </div>
             <p class="second-article__text">Сам по себе чистый лист, конечно, не страшный. Боимся мы чаще всего объёма работы, которую предстоит сделать. Усилия, той точки, которую нужно преодолеть, чтобы переключить мозг из состояния паники в состояние потока. Причин, почему первые усилия даются так сложно, может быть очень много. Вот основные:</p>
             <ul class="second-article__list">
@@ -44,8 +46,37 @@
             </ul>
         </section>
         <section class="third-article">
-            <div></div>
+            <div>
+                <p class="special-text">Как всё-таки начать</p>
+                <p class="special-text">что-то делать</p>
+            </div>
+            <p class="third-article__text">Чаще всего страх чистого листа появляется не из-за чего-то одного, а из-за совокупности нескольких факторов. Вот что может помочь:</p>
+            <div class="card">
+                <img src="images/alexypolarinov.png" class="card__image">
+                <p class="card__name">Алексей Поляринов</p>
+                <p class="card__title">Начать любыми словами</p>
+                <p class="card__text">Любыми — без шуток. Если не верите нам, посмотрите, например, чем открывается эссе Алексея Поляринова «Чарли Кауфман: расширение пространства». Можно и менее радикально. Главное, чтобы пустую страницу начали заполнять символы. Получится своеобразная ловушка для мозга: он видит, что вы уже начали что-то делать, и ему становится легче войти в состояние потока.</p>
+            </div>
+            <div class="card special-bg">
+                <p class="card__title">Поставить перед собой рамку для фотографии</p>
+                <p class="card__text">Самую обычную: 10 на 15 сантиметров. Уже от одного ощущения, что предстоит работа над большой и сложной задачей, может пропасть всякое желание за неё браться. В такие моменты хорошо помогает загнать задачу в рамки — в прямом смысле. Сосредоточьтесь на том, чтобы заполнить только пространство 10х15 сантиметров. Что дальше — пока неважно.</p>
+            </div>
+            <div class="card">
+                <img src="images/ivanbynin.png" class="card__image">
+                <p class="card__name">Иван Бунин</p>
+                <p class="card__title">Сделать из задачи рутину</p>
+                <p class="card__text">«Писать стихи нужно каждый день, подобно тому как скрипач или пианист непременно должен каждый день без пропусков по нескольку часов играть на своём инструменте. В противном случае ваш талант неизбежно оскудеет, высохнет, подобно колодцу, откуда долгое время не берут воду. А о чём писать? О чём угодно. Если у вас в данное время нет никакой темы, идеи, то пишите просто обо всём, что увидите», — такой совет своему приятелю дал Иван Бунин. Нет повода ему не следовать.</p>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__logo"><img src="images/logo-footer.png"></div>
+        <nav class="footer__menu">
+            <ul class="footer__menu-list">
+                <li class="footer__menu-list-item">ВК</li>
+                <li class="footer__menu-list-item">Ютуб</li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
